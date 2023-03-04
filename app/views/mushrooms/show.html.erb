@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mushroom %>
+
+<div>
+  <%= link_to "Edit this mushroom", edit_mushroom_path(@mushroom) %> |
+  <%= link_to "Back to mushrooms", mushrooms_path %>
+
+  <%= button_to "Delete this mushroom", @mushroom, method: :delete %>
+</div>
