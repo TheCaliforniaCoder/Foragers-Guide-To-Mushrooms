@@ -37,7 +37,7 @@ class MushroomsController < ApplicationController
     # PATCH/PUT /mushrooms/1 or /mushrooms/1.json
     def update
       respond_to do |format|
-        if @patient.update(mushroom_params)
+        if @mushroom.update(mushroom_params)
           format.html { redirect_to mushroom_url(@mushroom), notice: "Mushroom was successfully updated." }
           format.json { render :show, status: :ok, location: @mushroom }
         else
