@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  name: MyString
+  body: MyString
+  psychedelic: false
+  deadly: false
+  img: MyString
+
+two:
+  user: two
+  name: MyString
+  body: MyString
+  psychedelic: false
+  deadly: false
+  img: MyString
