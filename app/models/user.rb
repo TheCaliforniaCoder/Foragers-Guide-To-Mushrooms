@@ -26,6 +26,10 @@ class User < ApplicationRecord
       end
     end
 
+    def default_mushrooms
+      mushrooms.where(is_default: true)
+    end
+
 private
 
     def add_default_mushrooms_to_new_user
