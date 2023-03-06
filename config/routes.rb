@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
+
+  get "mushrooms/home"
   resources :users
   resources :mushrooms
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
