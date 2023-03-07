@@ -7,7 +7,6 @@ class UsersController < ApplicationController
   
     # GET /users/4 or /users/4.json
     def show
-      
       @user = current_user
       @default_mushrooms = @user.default_mushrooms
     end

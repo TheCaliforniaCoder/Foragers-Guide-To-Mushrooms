@@ -1,1 +1,8 @@
 <h1>Button will go here leading to mushrooms page</h1>
+
+<% if user_signed_in? %>
+  <%= button_to "See your mushrooms", user_path(current_user), method: :get %>
+<% end %>
+
+
+
