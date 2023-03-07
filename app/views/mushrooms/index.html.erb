@@ -8,6 +8,7 @@
   <% current_user.default_mushrooms.each do |mushroom| %>
     <li>
       <%= mushroom.name %>
+      <%= link_to "Show this mushroom", mushroom_path(mushroom) %>
       <%= link_to "Edit", edit_mushroom_path(mushroom) %>
       <%= button_to "Delete", mushroom, method: :delete %>
     </li>
