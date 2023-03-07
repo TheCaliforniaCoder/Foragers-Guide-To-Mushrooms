@@ -1,4 +1,21 @@
-<h1>index page</h1>
+<h1>Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
+
+<ul>
+  <% @default_mushrooms.each do |mushroom| %>
+    <li><%= mushroom.name %> 
+    <br>
+    <%= mushroom.body %> 
+    <br>
+    <p>Psychedelic? <%= mushroom.psychedelic %></p> 
+    <p>Deadly? <%= mushroom.deadly %> </p>
+    <br>
+    <%= image_tag(mushroom.img) %></li>
+  <% end %>
+  <%= link_to "Edit this mushroom", edit_mushroom_path(@mushroom) %> |
+  <%= link_to "Back to mushrooms", mushrooms_path %>
+
+  <%= button_to "Destroy this mushroom", @mushroom, method: :delete %>
+</ul>
 
 
 

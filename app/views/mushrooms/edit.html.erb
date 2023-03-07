@@ -1,10 +1,13 @@
-<h1>Editing mushroom</h1>
+<%= form_with(model: @mushroom, url: mushroom_path(@mushroom), method: :patch) do |form| %>
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
 
-<%= render "form", mushroom: @mushroom %>
+  <div>
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+  </div>
 
-<br>
-
-<div>
-  <%= link_to "Show this mushroom", @mushroom %> |
-  <%= link_to "Back to mushrooms", mushrooms_path %>
-</div>
+  <%= form.submit "Update Mushroom" %>
+<% end %>

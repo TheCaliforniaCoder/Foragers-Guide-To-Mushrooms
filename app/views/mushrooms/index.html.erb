@@ -1,16 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Mushrooms</h1>
+<h1>Your Mushrooms</h1>
 
 <h3>In recent years, a body of remarkable experiments have shown that fungi operate as individuals, engage in decision-making, are capable of learning, and possess short-term memory.</h3>
 
-<div id="mushrooms">
-  <% @mushrooms.each do |mushroom| %>
-    <%= render mushroom %>
-    <p>
-      <%= link_to "Show this mushroom", mushroom %>
-    </p>
+<ul>
+  <% current_user.default_mushrooms.each do |mushroom| %>
+    <li>
+      <%= mushroom.name %>
+      <%= link_to "Edit", edit_mushroom_path(mushroom) %>
+      <%= button_to "Delete", mushroom, method: :delete %>
+    </li>
   <% end %>
-</div>
+</ul>
 
-<%= link_to "New mushroom", new_mushroom_path %>
+<%= link_to "New Mushroom", new_mushroom_path %>
