@@ -11,5 +11,16 @@
     <%= form.text_area :body %>
   </div>
 
+  <div >
+  <%= form.label :psychedelic %>
+  <%= form.check_box :psychedelic %>
+</div>
+
+<div >
+<%= form.label :deadly %>
+<%= form.check_box :deadly %>
+</div>
+
   <%= form.submit "Create Mushroom" %>
+  <%= link_to "Back to Mushrooms", mushrooms_path %>
 <% end %>
