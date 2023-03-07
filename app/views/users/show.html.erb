@@ -2,8 +2,15 @@
 
 <ul>
   <% @default_mushrooms.each do |mushroom| %>
-    <li><%= mushroom.name %> - <%= mushroom.body %></li>
+    <li><%= mushroom.name %> 
+    <br>
+    <%= mushroom.body %> 
+    <br>
+    <p>Psychedelic? <%= mushroom.psychedelic %></p> 
+    <p>Deadly? <%= mushroom.deadly %> </p>
+    <br>
+    <%= image_tag(mushroom.img) %></li>
   <% end %>
 </ul>
 
-<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+
