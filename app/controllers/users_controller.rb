@@ -5,9 +5,10 @@ class UsersController < ApplicationController
     def index
     end
   
-    # GET /users/1 or /users/1.json
+    # GET /users/4 or /users/4.json
     def show
-      @user = User.find(params[:id])
+      
+      @user = current_user
       @default_mushrooms = @user.default_mushrooms
     end
   
