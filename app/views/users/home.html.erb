@@ -2,6 +2,7 @@
 
 <% if user_signed_in? %>
   <%= button_to "See your mushrooms", user_path(current_user), method: :get %>
+  <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
 <% end %>
 
 

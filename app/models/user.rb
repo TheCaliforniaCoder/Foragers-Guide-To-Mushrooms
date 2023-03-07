@@ -3,7 +3,8 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :mushrooms
+
+  has_many :mushrooms, dependent: :destroy
 
   after_create :add_default_mushrooms_to_new_user
 
