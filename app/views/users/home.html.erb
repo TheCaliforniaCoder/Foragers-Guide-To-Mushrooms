@@ -1,8 +1,9 @@
-<h1>Button will go here leading to mushrooms page</h1>
 
 <% if user_signed_in? %>
   <%= button_to "See your mushrooms", mushrooms_path, method: :get %>
   <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
+  <% else %>
+  <h1>Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
 <% end %>
 
 
