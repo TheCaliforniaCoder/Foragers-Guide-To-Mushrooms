@@ -1,7 +1,5 @@
 <h1>Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
 
-<%= link_to 'View Profile', user_path(@user) %>
-
 <ul>
   <% @default_mushrooms.each do |mushroom| %>
     <li><%= mushroom.name %> - <%= mushroom.body %></li>
