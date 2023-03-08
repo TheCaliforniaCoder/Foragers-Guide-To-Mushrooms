@@ -1,5 +1,6 @@
 
 <% if user_signed_in? %>
+<h1>Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
   <%= button_to "See your mushrooms", mushrooms_path, method: :get %>
   <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
   <% else %>

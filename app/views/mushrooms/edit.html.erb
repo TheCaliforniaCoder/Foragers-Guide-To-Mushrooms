@@ -15,11 +15,15 @@
   
     <%= form.label :deadly %>
     <%= form.check_box :deadly, checked: @mushroom.deadly %>
+
   
     <%= form.submit %>
   <% end %>
-  
+
   <%= button_to "Delete Mushroom", mushroom_path(@mushroom), method: :delete, data: { confirm: "Are you sure you want to delete this mushroom?" } %>
 
+  <%= image_tag @mushroom.img %>
+  
   <%= link_to "Back to Mushrooms", mushrooms_path %>
 <% end %>
+
