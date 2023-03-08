@@ -10,7 +10,7 @@
     <%= form.check_box :deadly, checked: @mushroom.deadly %>
   
     <%= form.submit %>
-  <% end %>
+<% end %>
 
 
 
@@ -23,4 +23,6 @@
 <% else %>
 <%= image_tag "DrawnMushie.jpg", width: "100" %>
 <% end %>
+
+<%= link_to "Back to Home", users_home_path %>
 <%= link_to "Back to Mushrooms", mushrooms_path %>

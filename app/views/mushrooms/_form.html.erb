@@ -1,5 +1,3 @@
-
-
 <%= form_for mushroom do |form| %>
     <% if mushroom.errors.any? %>
       <div style="color: red">
@@ -21,21 +19,22 @@
     <div>
         <%= form.label :body, style: "display: block" %>
         <%= form.text_field :body %>
-   </div>
+    </div>
 
-   
-    <%= form.label :psychedelic %>
-    <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
-  
-    <%= form.label :deadly %>
-    <%= form.check_box :deadly, checked: @mushroom.deadly %>
+    <div>
+        <%= form.label :psychedelic %>
+        <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
+      
+        <%= form.label :deadly %>
+        <%= form.check_box :deadly, checked: @mushroom.deadly %>
+    </div>
 
-  <div>
-    <%= form.label :img, style: "display: block" %>
-    <%= form.text_field :img %>
-  </div>
+    <div>
+        <%= form.label :img, style: "display: block" %>
+        <%= form.text_field :img %>
+    </div>
   
     <div>
-      <%= form.submit %>
-    </div>
-  <% end %>
+        <%= form.submit %>
+    </div>   
+<% end %>
