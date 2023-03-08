@@ -1,5 +1,5 @@
 <% if user_signed_in? %>
-  <h1>Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
+  <h1 class="header">Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
 
   <h2>There's an old Irish saying that goes:</h2>
   <h2><em>"There are old mushroom hunters, and there are bold mushroom hunters, but there are no old, bold mushroom hunters."</em></h2>
@@ -18,7 +18,9 @@
     <%= button_to "See tools you'll need", mushrooms_tools_path, method: :get %>
     <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
     <% else %>
-    <h1>Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
+    <h1>Welcome fellow Mycophile! 
+    <br>
+    Please log in or create an account to view our mushrooms!</h1>
 <% end %>
 
 

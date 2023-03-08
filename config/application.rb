@@ -12,6 +12,9 @@ module ForagersGuideToMushrooms
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    # Add the following line to include the app/assets/stylesheets directory in the asset pipeline.
+    config.assets.paths << Rails.root.join('app', 'assets', 'stylesheets')
+    
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
