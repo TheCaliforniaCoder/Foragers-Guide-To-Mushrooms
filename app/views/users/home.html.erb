@@ -1,7 +1,22 @@
 
 <% if user_signed_in? %>
 <h1>Welcome to the Foragers Guide To Mushrooms... And Not Dying</h1>
+
+<h2>There's an old Irish saying that goes:</h2>
+<h2><em>"There are old mushroom hunters, and there are bold mushroom hunters, but there are no old, bold mushroom hunters."</em></h2>
+
+<h3>Before we dive into any Fungi. There are a few things to always remember:</h3>
+
+<ul>
+<li>ALWAYS do your research! Although, you will find information here, you should still do your own research beyond this site.</li>
+<li>Never eat a raw mushroom. Be sure to thoroughly cook any mushroom you decide to consume.</li>
+</ul>
+
+<h3>Happy Foraging!</h3>
+
+
   <%= button_to "See your mushrooms", mushrooms_path, method: :get %>
+  <%= button_to "See Tools", mushrooms_tools_path, method: :get %>
   <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
   <% else %>
   <h1>Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>

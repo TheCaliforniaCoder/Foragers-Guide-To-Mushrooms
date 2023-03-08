@@ -23,15 +23,17 @@
         <%= form.text_field :body %>
    </div>
 
-   <%= form_with model: @mushroom do |form| %>
+   
     <%= form.label :psychedelic %>
     <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
   
     <%= form.label :deadly %>
     <%= form.check_box :deadly, checked: @mushroom.deadly %>
-  
-    <%= form.submit %>
-  <% end %>
+
+  <div>
+    <%= form.label :img, style: "display: block" %>
+    <%= form.text_field :img %>
+  </div>
   
     <div>
       <%= form.submit %>
