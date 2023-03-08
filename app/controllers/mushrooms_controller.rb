@@ -4,7 +4,7 @@ class MushroomsController < ApplicationController
   def index
     @mushrooms = Mushroom.all
   end
-
+  
   def show
     @mushroom = Mushroom.find(params[:id])
   end

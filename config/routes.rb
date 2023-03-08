@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   delete '/users/:id', to: 'users#destroy'
   resources :users, only: [:index, :show, :users_home]
 
-  resources :mushrooms
+  resources :mushrooms 
+    
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
  root "users#home"
   # Defines the root path route ("/")
