@@ -10,15 +10,15 @@ class MushroomsController < ApplicationController
   end
 
   def new
-    @mushroom = current_user.mushrooms.build
+    @mushroom = Mushroom.new
   end
 
   def create
-    @mushroom = current_user.mushrooms.build(mushroom_params)
+    @mushroom = current_user.mushrooms.new(mushroom_params)
     if @mushroom.save
       redirect_to @mushroom
     else
-      render 'new'
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -31,7 +31,7 @@ class MushroomsController < ApplicationController
     if @mushroom.update(mushroom_params)
       redirect_to @mushroom
     else
-      render 'edit'
+      render :edit, status: :unprocessable_entity
     end
   end
 

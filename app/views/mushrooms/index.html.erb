@@ -8,7 +8,11 @@
   <% current_user.default_mushrooms.each do |mushroom| %>
     <li>
       <%= mushroom.name %>
+      <% if mushroom.img %>
       <%= image_tag(mushroom.img) %>
+      <% else %>
+      <%= image_tag "DrawnMushie.jpg", width: "100" %>
+      <% end %>
       <%= link_to "Show", mushroom_path(mushroom) %>
       <%= link_to "Edit", edit_mushroom_path(mushroom) %>
       <%= button_to "Delete", mushroom, method: :delete %>

@@ -1,26 +1,4 @@
+<%= @mushroom.name %>
 <h1>New Mushroom</h1>
+<%= render "form", mushroom: @mushroom %>
 
-<%= form_with(model: @mushroom, url: mushrooms_path) do |form| %>
-  <div>
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div >
-  <%= form.label :psychedelic %>
-  <%= form.check_box :psychedelic %>
-</div>
-
-<div >
-<%= form.label :deadly %>
-<%= form.check_box :deadly %>
-</div>
-
-  <%= form.submit "Create Mushroom" %>
-  <%= link_to "Back to Mushrooms", mushrooms_path %>
-<% end %>

@@ -6,6 +6,9 @@ class User < ApplicationRecord
 
   has_many :mushrooms, dependent: :destroy
 
+  validates :email, presence: true
+  validates :email, uniqueness: true
+
   after_create :add_default_mushrooms_to_new_user
 
     def self.add_default_mushrooms_to_all_users
