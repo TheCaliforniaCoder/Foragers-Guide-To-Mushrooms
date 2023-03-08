@@ -2,7 +2,16 @@
 
 <p><%= @mushroom.body %></p>
 
-<%= link_to "Edit", edit_mushroom_path(@mushroom) %> |
+<%= form_with model: @mushroom do |form| %>
+    <%= form.label :psychedelic %>
+    <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
+  
+    <%= form.label :deadly %>
+    <%= form.check_box :deadly, checked: @mushroom.deadly %>
+  
+    <%= form.submit %>
+  <% end %>
+
 <%= link_to "Back to Mushrooms", mushrooms_path %>
 <%= button_to "Delete Mushroom", mushroom_path(@mushroom), method: :delete, data: { confirm: "Are you sure you want to delete this mushroom?" } %>
 <%= link_to "New Mushroom", new_mushroom_path %>
