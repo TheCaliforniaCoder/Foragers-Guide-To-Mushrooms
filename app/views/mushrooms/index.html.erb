@@ -1,16 +1,14 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Your Mushrooms</h1>
-
-<h3>In recent years, a body of remarkable experiments have shown that fungi operate as individuals, engage in decision-making, are capable of learning, and possess short-term memory.</h3>
+<h1 id="urmushies">Your Mushrooms</h1>
 
 <div class="mushrooms">
 <ul class="mushroom-grid">
   <% current_user.default_mushrooms.each do |mushroom| %>
     <li class="mushie">
-      <%= mushroom.name %>
+    <span class="mushname"><%= mushroom.name %></span>
       <% if mushroom.img %>
-      <%= image_tag(mushroom.img, size: '200x300') %>
+      <%= image_tag(mushroom.img, size: '275x400') %>
       <% else %>
       <%= image_tag "DrawnMushie.jpg", width: "100" %>
       <% end %>

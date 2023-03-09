@@ -2,10 +2,24 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-gap: 20px;
+        list-style-type: none;
+        
 }
 
 .mushie {
-    background-color: #f1f1f1;
+    background-color: white;
     padding: 20px;
     text-align: center;
+}
+
+.mushrooms {
+    background-color: white;
+}
+
+#urmushies {
+    text-align: center;
+}
+
+.mushname {
+    font-size: 35px;
 }
