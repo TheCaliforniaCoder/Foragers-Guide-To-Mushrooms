@@ -43,11 +43,13 @@
   </ul>
 </nav>
 
-  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
+  <% link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
   <% else %>
-    <%= link_to "Login", new_user_session_path %>
+  <div class="access-group">
+    <%= link_to "Login", new_user_session_path, class: "login-button" %>
   <div style="margin-top: 10px;">
-    <%= link_to "Sign up", new_user_registration_path %>
+    <%= link_to "Sign up", new_user_registration_path, class: "signup-button" %>
+  </div>
   </div>
   <% end %>
   </header>

@@ -22,3 +22,33 @@
     50% { border-color: #796A23 }
   }
 
+  .access-group {
+    display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  }
+
+  .access:hover {
+    background-color: #0062cc;
+  }
+
+  .access-button {
+    text-align: center;
+  }
+
+  .login-button {
+    margin-right: 10px;
+  }
+
+  .signup-button {
+    margin-left: 10px;
+  }
+
