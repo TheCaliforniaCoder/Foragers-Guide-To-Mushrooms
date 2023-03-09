@@ -18,9 +18,9 @@
     <%= button_to "See tools you'll need", mushrooms_tools_path, method: :get %>
     <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete %>
     <% else %>
-    <h1>Welcome fellow Mycophile! 
-    <br>
-    Please log in or create an account to view our mushrooms!</h1>
+    <div class="typewriter">
+    <h1>Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
+    </div>
 <% end %>
 
 
