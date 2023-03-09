@@ -31,7 +31,7 @@
       <%= button_to "See Your Mushrooms", mushrooms_path, method: :get, class: "nav-link" %>
     </li>
     <li class="nav-item">
-      <%= button_to "See Tools You'll Need", mushrooms_tools_path, method: :get, class: "nav-link" %>
+      <%= button_to "See Tools You'll need", mushrooms_tools_path, method: :get, class: "nav-link" %>
     </li>
     <li class="nav-item">
     <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
@@ -42,10 +42,11 @@
   </ul>
 </nav>
 
-  <% link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
   <% else %>
-
-  </div>
+  <%= link_to "Login", new_user_session_path, class: "btn-welcome" %>
+  <div>
+  <%= link_to "Sign up", new_user_registration_path, class: "btn-welcome" %>
+</div>
   <% end %>
   </header>
   </body>
