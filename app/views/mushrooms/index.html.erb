@@ -1,5 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="shrooms">
 <h1 id="urmushies">Your Mushrooms</h1>
 
 <div class="mushrooms">
@@ -8,7 +9,7 @@
     <li class="mushie">
     <span class="mushname"><%= mushroom.name %></span>
       <% if mushroom.img %>
-      <%= image_tag(mushroom.img, size: '275x400') %>
+      <span class="shroomm"><%= image_tag(mushroom.img, size: '275x400') %></span>
       <% else %>
       <%= image_tag "DrawnMushie.jpg", width: "100" %>
       <% end %>
@@ -19,7 +20,4 @@
   <% end %>
 </ul>
 </div>
-
-<%= button_to "See Tools", mushrooms_tools_path, method: :get %>
-<%= link_to "Back to Home", users_home_path %>
-<%= link_to "New Mushroom", new_mushroom_path %>
+</div>

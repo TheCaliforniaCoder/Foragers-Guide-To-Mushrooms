@@ -6,8 +6,7 @@
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-    text-align: center;    
+      blink-caret .75s step-end infinite; 
   }
   
   /* The typing effect */
@@ -23,7 +22,7 @@
   }
 
   .access-group {
-    display: inline-block;
+  display: inline-block;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -50,5 +49,9 @@
 
   .signup-button {
     margin-left: 10px;
+  }
+
+  #landing{
+    text-align: center;
   }
 

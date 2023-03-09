@@ -1,19 +1,27 @@
 .mushroom-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-gap: 20px;
+        justify-content: center;
+        grid-template-columns: 25% 25% 25% 25% ;
+        grid-template-rows:  20% 20% 20% 20%;
+        grid-gap: 50px;
         list-style-type: none;
-        
 }
 
 .mushie {
     background-color: white;
     padding: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
 }
 
 .mushrooms {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #urmushies {
@@ -22,4 +30,28 @@
 
 .mushname {
     font-size: 35px;
+}
+
+.spacing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.shrooms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shroomm{
+    display: flex;
+    justify-content: center;
 }
