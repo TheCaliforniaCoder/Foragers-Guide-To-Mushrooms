@@ -35,7 +35,7 @@
       <%= button_to "See tools you'll need", mushrooms_tools_path, method: :get, class: "nav-link" %>
     </li>
     <li class="nav-item">
-    <%= button_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
+    <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
   </li>
     <li class="nav-item">
       <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "nav-link" %>
