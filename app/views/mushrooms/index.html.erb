@@ -13,20 +13,13 @@
       <% else %>
       <%= image_tag "DrawnMushie.jpg", width: "100" %>
       <% end %>
-      <div class="action-btns-container">
-      <div class="action-btns">
+
       <%= link_to "Show", mushroom_path(mushroom) %>
-      </div>
-      <div class="action-btns">
       <%= link_to "Edit", edit_mushroom_path(mushroom) %>
-      </div>
-      <div class="action-btns">
-      <%= link_to "Delete", mushroom, method: :delete %>
-      </div>
-      </div>
+      <%= button_to "Delete", mushroom, method: :delete %>
     </li>
   <% end %>
 </ul>
 </div>
-<%= button_to "Add new mushroom", new_mushroom_path %>
+<%= link_to "Add new mushroom", new_mushroom_path %>
 </div>
