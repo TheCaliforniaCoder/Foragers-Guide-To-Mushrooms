@@ -9,7 +9,7 @@
     <li class="mushie">
     <span class="mushname"><%= mushroom.name %></span>
       <% if mushroom.img %>
-      <span class="shroomm"><%= image_tag(mushroom.img, size: '275x400') %></span>
+      <span class="shroomm"><%= image_tag(mushroom.img) %></span>
       <% else %>
       <%= image_tag "DrawnMushie.jpg", width: "100" %>
       <% end %>

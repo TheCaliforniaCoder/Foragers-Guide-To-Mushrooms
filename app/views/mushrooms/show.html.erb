@@ -13,13 +13,10 @@
     <%= form.submit %>
 <% end %>
 
-
-
-
-<%= button_to "Delete Mushroom", mushroom_path(@mushroom), method: :delete, data: { confirm: "Are you sure you want to delete this mushroom?" } %>
-
 <% if @mushroom.img %>
-<span class="show-img"><%= image_tag(@mushroom.img) %></span>
+<%= image_tag @mushroom.img, class: "show-img" %>
+
+</div>
 <% else %>
 <%= image_tag "DrawnMushie.jpg", width: "100" %>
 <% end %>
