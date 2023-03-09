@@ -24,6 +24,10 @@
   <a href="#" class="navbar-brand">Foragers Guide To Mushrooms</a>
 
   <ul class="navbar-nav">
+
+  <li class="nav-item">
+  <%= button_to "Back to Home", users_home_path, method: :get, class: "nav-link" %>
+</li>
     <li class="nav-item">
       <%= button_to "See your mushrooms", mushrooms_path, method: :get, class: "nav-link" %>
     </li>
@@ -31,14 +35,16 @@
       <%= button_to "See tools you'll need", mushrooms_tools_path, method: :get, class: "nav-link" %>
     </li>
     <li class="nav-item">
+    <%= button_to "Logout", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link" %>
+  </li>
+    <li class="nav-item">
       <%= button_to "Delete Account", registration_path(current_user), data: { confirm: "Are you sure?" }, method: :delete, class: "nav-link" %>
     </li>
   </ul>
 </nav>
 
-  Welcome <%= current_user.email %>!
-  &nbsp; |&nbsp;
-  <%= link_to "Logout", destroy_user_session_path, data: { turbo_method: :delete } %>
+  Welcome, foraging friend%>!
+ 
   <% else %>
     <%= link_to "Login", new_user_session_path %>
   <div style="margin-top: 10px;">
