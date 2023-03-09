@@ -18,7 +18,7 @@
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #796A23 }
+    50% { border-color: white }
   }
 
 /*   .access-group {
@@ -35,7 +35,7 @@
   margin: 10px;
   } */
 
-  .access:hover {
+  .btn-welcome:hover {
     background-color: #0062cc;
   }
 
