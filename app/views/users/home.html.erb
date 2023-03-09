@@ -9,12 +9,12 @@
   <h3>Happy Foraging!</h3>
 </div>
     <% else %>
-    <div class="typewriter" id="landing">
-    <h1>Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
-    <div class="access-group">
-    <%= link_to "Login", new_user_session_path, class: "login-button" %>
-  <div style="margin-top: 10px;">
-    <%= link_to "Sign up", new_user_registration_path, class: "signup-button" %>
+    <div class="typewriter landing">
+    <h1 class="welcome">Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
+    <div class="welcome-btn">
+    <%= link_to "Login", new_user_session_path, class: "btn-welcome" %>
+  <div>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn-welcome" %>
   </div>
     </div>
 <% end %>

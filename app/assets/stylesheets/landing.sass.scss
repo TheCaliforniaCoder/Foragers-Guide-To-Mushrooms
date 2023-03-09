@@ -21,7 +21,7 @@
     50% { border-color: #796A23 }
   }
 
-  .access-group {
+/*   .access-group {
   display: inline-block;
   background-color: #007bff;
   color: #fff;
@@ -33,25 +33,43 @@
   cursor: pointer;
   border-radius: 5px;
   margin: 10px;
-  }
+  } */
 
   .access:hover {
     background-color: #0062cc;
   }
 
-  .access-button {
+  .welcome-btn {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  .btn-welcome{
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .landing{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
   }
 
-  .login-button {
-    margin-right: 10px;
+  .welcome {
+    padding: 2rem;
   }
-
-  .signup-button {
-    margin-left: 10px;
-  }
-
-  #landing{
-    text-align: center;
-  }
-
