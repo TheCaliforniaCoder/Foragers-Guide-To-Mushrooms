@@ -1,3 +1,22 @@
+.action-btns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btns {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 .mushroom-grid {
         display: grid;
         justify-content: center;
@@ -30,6 +49,7 @@
 
 .mushname {
     font-size: 30px;
+    margin-top: 30px;
 }
 
 .spacing {
@@ -53,6 +73,7 @@ img {
     height: 400px;
     border: 2px solid green;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .shroomm{
