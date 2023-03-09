@@ -11,30 +11,30 @@
       </div>
     <% end %>
   
-    <div>
-        <%= form.label :name, style: "display: block" %>
+    <div class ="input-name">
+        <%= form.label :name, style: "margin: 10px" %>
         <%= form.text_field :name %>
     </div>
 
-    <div>
-        <%= form.label :body, style: "display: block" %>
+    <div class ="input-body">
+        <%= form.label :body, style: "margin: 10px" %>
         <%= form.text_field :body %>
     </div>
 
-    <div>
-        <%= form.label :psychedelic %>
+    <div class ="input-boolean">
+        <%= form.label :psychedelic, style: "margin: 10px" %>
         <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
       
-        <%= form.label :deadly %>
+        <%= form.label :deadly, style: "margin: 10px" %>
         <%= form.check_box :deadly, checked: @mushroom.deadly %>
     </div>
 
-    <div>
-        <%= form.label :img, style: "display: block" %>
-        <%= form.text_field :img %>
+    <div class ="input-img">
+        <%= form.label :img, style: "margin: 10px" %>
+        <%= form.text_field :img, style: "margin: 5px" %>
     </div>
   
-    <div>
+    <div class ="input-btn">
         <%= form.submit %>
     </div>   
 <% end %>

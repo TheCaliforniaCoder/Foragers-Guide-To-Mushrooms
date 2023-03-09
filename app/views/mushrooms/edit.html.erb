@@ -1,7 +1,7 @@
-<h1>Edit Mushroom</h1>
+<div class="edit-pg">
+<h1 class="letter-spacing">Edit Mushroom</h1>
+</div>
+<div class="update">
 <%= render "form", mushroom: @mushroom %>
 
-<%= button_to "Delete Mushroom", mushroom_path(@mushroom), method: :delete, data: { confirm: "Are you sure you want to delete this mushroom?" } %>
-
-<%= link_to "Back to Home", users_home_path %>
-<%= link_to "Back to Mushrooms", mushrooms_path %>
+</div>
