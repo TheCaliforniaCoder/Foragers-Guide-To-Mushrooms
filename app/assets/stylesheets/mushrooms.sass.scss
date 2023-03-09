@@ -51,9 +51,12 @@ img {
     align-items: center;
      width: 275px;
     height: 400px;
+    border: 2px solid green;
+    border-radius: 20px;
 }
 
 .shroomm{
     display: flex;
     justify-content: center;
 }
+

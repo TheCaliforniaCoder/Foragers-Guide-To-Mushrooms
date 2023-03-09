@@ -1,13 +1,8 @@
-
+<div class="new-pg">
 <h1>New Mushroom</h1>
-<%= render "form", mushroom: @mushroom %>
+</div>
 
-<% if @mushroom.img %>
-<%= image_tag(@mushroom.img) %>
-<% else %>
-<%= image_tag "DrawnMushie.jpg", width: "100" %>
-<% end %>
-
-<%= link_to "Back to Home", users_home_path %>
-<%= link_to "Back to Mushrooms", mushrooms_path %>
+<div class="add-new">
+<%= render "new", mushroom: @mushroom %>
+</div>
 
