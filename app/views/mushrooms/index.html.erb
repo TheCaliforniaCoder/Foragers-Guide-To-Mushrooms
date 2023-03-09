@@ -4,12 +4,13 @@
 
 <h3>In recent years, a body of remarkable experiments have shown that fungi operate as individuals, engage in decision-making, are capable of learning, and possess short-term memory.</h3>
 
-<ul>
+<div class="mushrooms">
+<ul class="mushroom-grid">
   <% current_user.default_mushrooms.each do |mushroom| %>
-    <li>
+    <li class="mushie">
       <%= mushroom.name %>
       <% if mushroom.img %>
-      <%= image_tag(mushroom.img) %>
+      <%= image_tag(mushroom.img, size: '200x300') %>
       <% else %>
       <%= image_tag "DrawnMushie.jpg", width: "100" %>
       <% end %>
@@ -19,6 +20,7 @@
     </li>
   <% end %>
 </ul>
+</div>
 
 <%= button_to "See Tools", mushrooms_tools_path, method: :get %>
 <%= link_to "Back to Home", users_home_path %>
