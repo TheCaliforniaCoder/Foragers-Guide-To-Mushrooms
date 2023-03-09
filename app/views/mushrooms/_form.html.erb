@@ -12,29 +12,32 @@
     <% end %>
   
     <div class ="input-name">
-        <%= form.label :name, style: "margin: 10px" %>
-        <%= form.text_field :name %>
+    <%= form.label :name, "Name:", style: "margin: 10px" %>
+    <%= form.text_field :name, class: "form-fields", style: "margin: 5px" %>
+    
     </div>
 
     <div class ="input-body">
-        <%= form.label :body, style: "margin: 10px" %>
-        <%= form.text_field :body %>
+        <%= form.label :body, "Body:", style: "margin: 10px" %>
+        <%= form.text_field :body, class: "form-fields" %>
     </div>
 
     <div class ="input-boolean">
-        <%= form.label :psychedelic, style: "margin: 10px" %>
+        <%= form.label :psychedelic, "Psychedelic?", style: "margin: 10px" %>
         <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
       
-        <%= form.label :deadly, style: "margin: 10px" %>
+        <%= form.label :deadly, "Deadly?", style: "margin: 10px" %>
         <%= form.check_box :deadly, checked: @mushroom.deadly %>
     </div>
 
     <div class ="input-img">
-        <%= form.label :img, style: "margin: 10px" %>
-        <%= form.text_field :img, style: "margin: 5px" %>
+    <%= form.label :img, "Image:", style: "margin: 10px" %>
+    <%= form.text_field :img, class: "form-fields", style: "margin: 5px" %>
+
     </div>
   
     <div class ="input-btn">
-        <%= form.submit %>
+    <%= form.submit "Submit", class: "edit-btn" %>
+
     </div>   
 <% end %>

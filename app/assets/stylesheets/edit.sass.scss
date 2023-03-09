@@ -20,67 +20,71 @@ body {
 }
 
 .input-name {
+    letter-spacing: .15em;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 28px;
     padding: 8px 16px;
     width: 100%;
     min-height: 44px;
     border: unset;
-    border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 
 }
 
 .input-body{
-    font-size: 16px;
+    letter-spacing: .15em;
+    font-size: 20px;
     line-height: 28px;
     padding: 8px 16px;
     width: 100%;
     min-height: 44px;
     border: unset;
-    border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 
 }
 
 .input-boolean{
-    font-size: 16px;
+    letter-spacing: .15em;
+    font-size: 20px;
     line-height: 28px;
     padding: 8px 16px;
     width: 100%;
     min-height: 44px;
     border: unset;
-    border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 
 }
 
 .input-img{
-    font-size: 16px;
+    letter-spacing: .15em;
+    font-size: 20px;
     line-height: 28px;
     padding: 8px 16px;
     width: 100%;
     min-height: 44px;
     border: unset;
-    border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 
 }
 
-.input-btn{
-    font-size: 16px;
-    line-height: 28px;
-    padding: 8px 16px;
+.edit-btn{
+    margin-top: 60px;
+    display: block;
     width: 100%;
-    min-height: 44px;
-    border: unset;
-    border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.edit-btn:hover{
+    background-color: #3e8e41;
+}
+
+.form-fields{
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
 }
