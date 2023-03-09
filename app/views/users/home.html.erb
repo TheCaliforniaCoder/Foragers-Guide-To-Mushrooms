@@ -1,22 +1,19 @@
 <% if user_signed_in? %>
-<div class="home-page" id="centered-text">
-  <h1 class="header letter-spacing">Welcome to the Foragers Guide To Mushrooms... And Not Dying!</h1>
-
-  <h1 class="typewriter"><em>“All fungi are edible. Some fungi are only edible once.” — Terry Pratchett</em></h1>
-
-  <h2 class="letter-spacing">ALWAYS do your research! Although, you will find information here, you should still do your own research beyond this site.</h2>
-
-  <h3 class="letter-spacing">Happy Foraging!</h3>
-</div>
-    <% else %>
-    <div class="typewriter landing">
-    <h1 class="welcome">Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
-    <div class="welcome-btn">
-    <%= link_to "Login", new_user_session_path, class: "btn-welcome" %>
-  <div>
-    <%= link_to "Sign up", new_user_registration_path, class: "btn-welcome" %>
+  <div class="home-page" id="centered-text">
+      <h1 class="header letter-spacing">Welcome to the Foragers Guide To Mushrooms... And Not Dying!</h1>
+      <h1 class="typewriter"><em>“All fungi are edible. Some fungi are only edible once.” — Terry Pratchett</em></h1>
+      <h2 class="letter-spacing">ALWAYS do your research! Although, you will find information here, you should still do your own research beyond this site.</h2>
+      <h3 class="letter-spacing">Happy Foraging!</h3>
   </div>
-    </div>
+
+<% else %>
+
+  <div class="typewriter landing">
+      <h1 class="welcome">Welcome fellow Mycophile! Please log in or create an account to view our mushrooms!</h1>
+      <div class="welcome-btn">
+      <%= link_to "Login", new_user_session_path, class: "btn-welcome" %>
+  <div>
+      <%= link_to "Sign up", new_user_registration_path, class: "btn-welcome" %>
 <% end %>
 
 

@@ -1,23 +1,21 @@
 <div class="show">
-<h1 class="letter-spacing"><%= @mushroom.name %></h1>
+    <h1 class="letter-spacing"><%= @mushroom.name %></h1>
 
-<p class="letter-spacing"><%= @mushroom.body %></p>
+    <p class="letter-spacing"><%= @mushroom.body %></p>
 
-<%= form_with model: @mushroom do |form| %>
-    <%= form.label :psychedelic %>
-    <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
-  
-    <%= form.label :deadly %>
-    <%= form.check_box :deadly, checked: @mushroom.deadly %>
-  
-    <%= form.submit %>
-<% end %>
+        <%= form_with model: @mushroom do |form| %>
+            <%= form.label :psychedelic %>
+            <%= form.check_box :psychedelic, checked: @mushroom.psychedelic %>
+        
+            <%= form.label :deadly %>
+            <%= form.check_box :deadly, checked: @mushroom.deadly %>
+    
+            <%= form.submit %>
+        <% end %>
 
-<% if @mushroom.img %>
-<%= image_tag @mushroom.img, class: "show-img" %>
-
-</div>
-<% else %>
-<%= image_tag "DrawnMushie.jpg", width: "100" %>
-<% end %>
+    <% if @mushroom.img %>
+    <%= image_tag @mushroom.img, class: "show-img" %>
+    <% else %>
+    <%= image_tag "DrawnMushie.jpg", width: "100" %>
+    <% end %>
 </div>

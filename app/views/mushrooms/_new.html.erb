@@ -12,9 +12,8 @@
     <% end %>
   
     <div class="input-title">
-    <%= form.label :name, "Name:", style: "margin: 10px" %>
-    <%= form.text_field :name, class: "new-form", style: "margin: 5px" %>
-    
+      <%= form.label :name, "Name:", style: "margin: 10px" %>
+      <%= form.text_field :name, class: "new-form", style: "margin: 5px" %>
     </div>
 
     <div class="input-facts">
@@ -31,13 +30,11 @@
     </div>
 
     <div class="input-pic">
-    <%= form.label :img, "Image:", style: "margin: 10px" %>
-    <%= form.text_field :img, class: "new-form", style: "margin: 5px" %>
-
+        <%= form.label :img, "Image:", style: "margin: 10px" %>
+        <%= form.text_field :img, class: "new-form", style: "margin: 5px" %>
     </div>
   
-    <di>
-    <%= form.submit "Submit", class: "new-btn" %>
-
+    <div>
+      <%= form.submit "Submit", class: "new-btn" %>
     </div>   
 <% end %>

@@ -1,25 +1,25 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="shrooms">
-<h1 id="urmushies" class="letter-spacing">Your Mushrooms</h1>
+  <h1 id="urmushies" class="letter-spacing">Your Mushrooms</h1>
 
-<div class="mushrooms">
-<ul class="mushroom-grid">
-  <% current_user.default_mushrooms.each do |mushroom| %>
-    <li class="mushie">
-    <span class="mushname letter-spacing"><%= mushroom.name %></span>
-      <% if mushroom.img %>
-      <span class="shroomm"><%= image_tag(mushroom.img) %></span>
-      <% else %>
-      <%= image_tag "DrawnMushie.jpg", width: "100" %>
+  <div class="mushrooms">
+    <ul class="mushroom-grid">
+      <% current_user.default_mushrooms.each do |mushroom| %>
+        <li class="mushie">
+        <span class="mushname letter-spacing"><%= mushroom.name %></span>
+          <% if mushroom.img %>
+          <span class="shroomm"><%= image_tag(mushroom.img) %></span>
+          <% else %>
+          <%= image_tag "DrawnMushie.jpg", width: "100" %>
+          <% end %>
+
+          <%= link_to "Show", mushroom_path(mushroom) %>
+          <%= link_to "Edit", edit_mushroom_path(mushroom) %>
+          <%= button_to "Delete", mushroom, method: :delete %>
+        </li>
       <% end %>
-
-      <%= link_to "Show", mushroom_path(mushroom) %>
-      <%= link_to "Edit", edit_mushroom_path(mushroom) %>
-      <%= button_to "Delete", mushroom, method: :delete %>
-    </li>
-  <% end %>
-</ul>
-</div>
-<%= link_to "Add new mushroom", new_mushroom_path %>
+    </ul>
+  </div>
+  <%= link_to "Add new mushroom", new_mushroom_path %>
 </div>
