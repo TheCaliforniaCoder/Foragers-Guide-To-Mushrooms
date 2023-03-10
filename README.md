@@ -60,7 +60,7 @@ I used an each method to iterate through each mushroom and display the default m
 
 Besides using Ruby on Rails for the first time, I'd say that I would have liked to use Bootstrap from the beginning instead of taking on the task of pure CSS within the time frame.  I needed to generate a few migrations to alter the tables I had so next time, I'd like to do a bit more planning now that I have a better understanding of Ruby on Rails. As for the CSS, I'll be using Bootstrap from now on:
 
-! I needed to generate a few migrations to alter the tables I had so next time, I'd like to do a bit more planning now that I have a better understanding of Ruby on Rails. 
+![Imgur](https://i.imgur.com/zLrDNhZ.png)
 
 # Wins
 
