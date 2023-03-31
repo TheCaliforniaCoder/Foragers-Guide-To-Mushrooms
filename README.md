@@ -1,18 +1,36 @@
 # The Forager's Guide To Mushrooms
 
+## Description
+
+I opted to develop an application called "The Forager's Guide to Mushrooms," which helps users prepare for their mushroom foraging expeditions. The app enables users to manage their own personalized mushroom database by adding, editing, and deleting entries. To create this full-stack application, I employed Ruby on Rails and PostgreSQL.
+
+### Preview Image
+
+(Coming soon)
+
+## Deployment Link
+
+(Coming Soon)
+
 ## User Stories
 
-* User creates an account and is taken to their home page
-
-* User can get a full list of all mushrooms
-
-* User can create a newly found mushroom
-
-* User can edit mushrooms that may have new findings or changed properties 
-
-* User can delete mushrooms if they’re endangered or simply don’t wish to see them in their list
-
-* User can see tools they may need on their foraging trip
+* Build a full stack web application. Must be your own work.
+* Select a Project Idea of your own.
+* Have at least 2 models (more if it makes sense)
+  * Authentication is required
+* Have full CRUD on at least one of your models 
+* Have high quality code:
+  * Follow accepted naming conventions
+  * Consistent indentation
+  * Well-structured and readable code
+  * Semantic naming of variables, functions, CSS classes, etc.
+  * Short and clear functions that do one thing
+  * Efficient code - if you have your MVP, refactor
+  * DRY (Don't Repeat Yourself) code
+* Use one of these technology stacks. You may choose which tech stack.
+  * Full-Stack Rails App
+  * Rails API with React Front-End
+  * Express API with React Front-End
 
 ## Timeframe 
 
@@ -24,9 +42,7 @@ We were given a week to complete this solo assignment.
 
 * Rails 7.0.4
 
-* Postgresql as the database
-
-* Puma as the web server 
+* PostgreSQL as the database
 
 * Turbo Rails
 
@@ -34,7 +50,7 @@ We were given a week to complete this solo assignment.
 
 ## Planning
 
-* After finding my user stories, I constructed and ERD for the relationships between my models:
+* After conceptualizing my idea, I constructed an ERD for the relationships between my models:
 
 ![Imgur](https://i.imgur.com/Qk0UwjV.png)
 
@@ -44,37 +60,47 @@ We were given a week to complete this solo assignment.
 
 # Build/Code Process
 
-With Rails, I knew immediately that I wanted to create two models: one for the user and one for the mushrooms. I used Devise for authentication so the user can sign up, log in, log out and delete their account. One user has many mushrooms so I decided to use the 'after_create' callback in Rails so that after a user is created, they find a default set of mushrooms: 
+* Upon starting with Rails, it was evident that I needed two models: one for the user and the other for the mushrooms. To implement the authentication process, I incorporated Devise, enabling users to sign up, log in, log out and delete their account.
 
-* All users have default mushrooms:
+(Code snippet of Devise goes here)
+
+This was my first time using Devise for authentication and I have to say that I was pleased with its capabilities.
+
+* I wanted each user to have a set list of mushrooms so I decided to use the 'after_create' callback in Rails so that after a user is created, they find a default set of mushrooms:
 
 ![Imgur](https://i.imgur.com/R5cqIva.png)
 
-I used an each method to iterate through each mushroom and display the default mushrooms to each user on the index page.
+* Incorporating this feature turned out to be beneficial as it led me to explore the Active Record Callbacks documentation, which offered insights on various callbacks that could be used.
+* I used an each method to iterate through each mushroom and display the default mushrooms to each user on the index page.
 
-* From there, each user can find a link to show, edit delete or add a new mushroom
+* From there, each user can find a link to show, edit delete or add a new mushroom:
 
 ![Imgur](https://i.imgur.com/l14YLge.png)
 
+* In addition to meeting the specified requirements, I integrated an extra feature that presents a list of tools necessary for users before embarking on a foraging expedition. This page also enables users to navigate to other pages on the site.
+
+(Code snippet tools page)
+
 # Challenges
 
-Besides using Ruby on Rails for the first time, I'd say that I would have liked to use Bootstrap from the beginning instead of taking on the task of pure CSS within the time frame.  I needed to generate a few migrations to alter the tables I had so next time, I'd like to do a bit more planning now that I have a better understanding of Ruby on Rails. As for the CSS, I'll be using Bootstrap from now on:
+Apart from my initial experience with Ruby on Rails, I would have preferred to use Bootstrap from the start rather than solely relying on CSS within the given time frame. I had to generate some migrations to modify the existing tables, so I plan to do more planning in advance now that I have a better grasp of Ruby on Rails. Going forward, I intend to use Bootstrap for CSS purposes:
 
 ![Imgur](https://i.imgur.com/zLrDNhZ.png)
 
 # Wins
 
-I'd say that I learned a lot within this week of using Ruby on Rails. All of the mistakes I made showed me exactly what not to do in the future so now I feel more confident starting a new Rails project.
+I would say that this week of working with Ruby on Rails has been a valuable learning experience for me. Although I made some mistakes along the way, I now have a clearer understanding of what to avoid in future Rails projects. As a result, I feel more confident in my ability to start and successfully complete future projects.
 
 # Key Learnings & Takeaways
 
 * To begin with, I underestimated exactly how useful Devise was so I'll definitely be using that in the future!
-* I will NOT be using pure CSS in the limited time frame!
-* In general, I feel like I have a better understanding of Ruby on Rails and postgresql.
+* I will refrain from using pure CSS for styling within the given time constraints and instead opt for a styling framework.
+* Despite the challenges I faced, I believe that I have gained a deeper understanding of Ruby on Rails and PostgreSQL overall.
 
 # Future Improvements
 
-As previosuly mentioned, going forward, I know what mistakes not to make in each part of the development process. Error driven development is something that boosts my problem solving abilities and requires me to learn more on the way to the solution. 
+* As previously stated, I aim to improve the styling to not only be more organized but also to reflect my personal style.
+* I’d also like to improve the structure and organization of the connections between files to optimize performance.
 
 
 
