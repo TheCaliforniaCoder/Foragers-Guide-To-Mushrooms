@@ -10,7 +10,7 @@ I opted to develop an application called "The Forager's Guide to Mushrooms," whi
 
 ## Deployment Link
 
-(Coming Soon)
+ * [Forager's Guide To Mushrooms](https://foragers-guide-to-mushrooms.herokuapp.com/)
 
 ## User Stories
 
