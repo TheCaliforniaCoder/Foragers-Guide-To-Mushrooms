@@ -156,6 +156,7 @@ I would say that this week of working with Ruby on Rails has been a valuable lea
 
 # Future Improvements
 
+* I'd like to make the app responsive.
 * As previously stated, I aim to improve the styling to not only be more organized but also to reflect my personal style.
 * I’d also like to improve the structure and organization of the connections between files to optimize performance.
 
